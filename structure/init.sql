@@ -1,3 +1,9 @@
+-- создание схемы
+CREATE SCHEMA IF NOT EXISTS organization_structure;
+
+-- Выбор схемы
+SET search_path TO organization_structure;
+
 CREATE TABLE Departments (
     DepartmentID SERIAL PRIMARY KEY,  -- Используем SERIAL для автоматической генерации идентификаторов
     DepartmentName VARCHAR(100) NOT NULL
