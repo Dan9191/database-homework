@@ -1,3 +1,9 @@
+-- создание схемы
+CREATE SCHEMA IF NOT EXISTS booking_hw;
+
+-- Выбор схемы
+SET search_path TO booking_hw;
+
 -- Создание таблицы Hotel
 CREATE TABLE Hotel (
 	ID_hotel SERIAL PRIMARY KEY,  -- Используем SERIAL для автоматической генерации идентификаторов
